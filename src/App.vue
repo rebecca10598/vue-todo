@@ -1,17 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <TodoList /> <!-- Use imported and registered component here -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TodoList from './components/TodoList.vue'; // Import the component
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TodoList // Register the component
   }
-}
+};
 </script>
 
 <style>
